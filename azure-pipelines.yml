@@ -42,5 +42,5 @@ steps:
     appType: 'webAppLinux'
     WebAppName: 'hexaware'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/ROOT.war'
-    RuntimeStack: 'JAVA|11-java11'
+    RuntimeStack: 'TOMCAT|9.0-java11'
     DeploymentTypeLinux: 'oneDeploy'
