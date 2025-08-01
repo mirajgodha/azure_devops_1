@@ -30,9 +30,7 @@ steps:
     ArtifactName: 'warfile'
     publishLocation: 'Container'
 
-- script: |
-    cp "$(Build.ArtifactStagingDirectory)/webapp/target/webapp.war" "$(Build.ArtifactStagingDirectory)/ROOT.war"
-  displayName: 'Rename WAR to ROOT.war'
+
 
     
 - task: AzureRmWebAppDeployment@5
@@ -41,6 +39,6 @@ steps:
     azureSubscription: 'Azure subscription 1(b930931c-179a-4584-8cfa-8935aea7c848)'
     appType: 'webAppLinux'
     WebAppName: 'hexaware'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/ROOT.war'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.war'
     RuntimeStack: 'TOMCAT|9.0-java11'
     DeploymentTypeLinux: 'oneDeploy'
