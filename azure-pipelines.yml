@@ -36,6 +36,6 @@ steps:
     azureSubscription: 'Azure subscription 1(b930931c-179a-4584-8cfa-8935aea7c848)'
     appType: 'webAppLinux'
     WebAppName: 'hexaware'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
     RuntimeStack: 'JAVA|11-java11'
     DeploymentTypeLinux: 'oneDeploy'
