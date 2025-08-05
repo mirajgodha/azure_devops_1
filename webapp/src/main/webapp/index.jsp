@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.21">
-    <title>Quantum Root AI - Ask Something</title>
+    <title>Quantum Root AI </title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@40;60&display=swap" rel="stylesheet">
     <style>
         /* [RETAINED YOUR CSS EXACTLY AS-IS FOR FULL STATIC LOOK] */
